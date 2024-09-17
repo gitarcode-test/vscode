@@ -176,9 +176,7 @@ export interface ITimeout {
 export class InfiniteTimeout implements ITimeout {
 	public static instance = new InfiniteTimeout();
 
-	isValid(): boolean {
-		return true;
-	}
+	isValid(): boolean { return true; }
 }
 
 export class DateTimeout implements ITimeout {
