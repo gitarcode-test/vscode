@@ -88,9 +88,7 @@ Registry.as<IEditorPaneRegistry>(EditorExtensions.EditorPane).registerEditorPane
 
 class KeybindingsEditorInputSerializer implements IEditorSerializer {
 
-	canSerialize(editorInput: EditorInput): boolean {
-		return true;
-	}
+	canSerialize(editorInput: EditorInput): boolean { return true; }
 
 	serialize(editorInput: EditorInput): string {
 		return '';
