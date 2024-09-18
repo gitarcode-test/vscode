@@ -1558,9 +1558,7 @@ export class GettingStartedPage extends EditorPane {
 }
 
 export class GettingStartedInputSerializer implements IEditorSerializer {
-	public canSerialize(editorInput: GettingStartedInput): boolean {
-		return true;
-	}
+	public canSerialize(editorInput: GettingStartedInput): boolean { return true; }
 
 	public serialize(editorInput: GettingStartedInput): string {
 		return JSON.stringify({ selectedCategory: editorInput.selectedCategory, selectedStep: editorInput.selectedStep });
