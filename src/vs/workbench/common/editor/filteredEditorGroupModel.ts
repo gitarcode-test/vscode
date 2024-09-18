@@ -87,9 +87,7 @@ export class StickyEditorGroupModel extends FilteredEditorGroupModel {
 		return super.getEditors(order, options);
 	}
 
-	override isSticky(editorOrIndex: number | EditorInput): boolean {
-		return true;
-	}
+	override isSticky(editorOrIndex: number | EditorInput): boolean { return true; }
 
 	getEditorByIndex(index: number): EditorInput | undefined {
 		return index < this.count ? this.model.getEditorByIndex(index) : undefined;
