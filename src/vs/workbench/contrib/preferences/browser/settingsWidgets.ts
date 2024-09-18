@@ -221,9 +221,7 @@ export abstract class AbstractListSettingWidget<TDataItem extends object> extend
 		return;
 	}
 
-	protected isAddButtonVisible(): boolean {
-		return true;
-	}
+	protected isAddButtonVisible(): boolean { return true; }
 
 	protected renderList(): void {
 		const focused = DOM.isAncestorOfActiveElement(this.listElement);

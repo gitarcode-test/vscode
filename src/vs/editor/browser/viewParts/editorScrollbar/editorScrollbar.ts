@@ -166,9 +166,7 @@ export class EditorScrollbar extends ViewPart {
 		}
 		return true;
 	}
-	public override onScrollChanged(e: viewEvents.ViewScrollChangedEvent): boolean {
-		return true;
-	}
+	public override onScrollChanged(e: viewEvents.ViewScrollChangedEvent): boolean { return true; }
 	public override onThemeChanged(e: viewEvents.ViewThemeChangedEvent): boolean {
 		this.scrollbar.updateClassName('editor-scrollable' + ' ' + getThemeTypeSelector(this._context.theme.type));
 		return true;
