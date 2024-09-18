@@ -253,9 +253,7 @@ export class MockSession implements IDebugSession {
 		return [];
 	}
 
-	hasSeparateRepl(): boolean {
-		return true;
-	}
+	hasSeparateRepl(): boolean { return true; }
 
 	removeReplExpressions(): void { }
 	get onDidChangeReplElements(): Event<IReplElement | undefined> {

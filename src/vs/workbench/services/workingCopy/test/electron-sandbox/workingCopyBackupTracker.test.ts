@@ -730,9 +730,7 @@ suite('WorkingCopyBackupTracker (native)', function () {
 					return false;
 				}
 
-				override isModified(): boolean {
-					return true;
-				}
+				override isModified(): boolean { return true; }
 			}
 
 			// Set hot exit config
