@@ -191,9 +191,7 @@ export class PanelPart extends AbstractPaneCompositePart {
 		super.layout(dimensions.width, dimensions.height, top, left);
 	}
 
-	protected override shouldShowCompositeBar(): boolean {
-		return true;
-	}
+	protected override shouldShowCompositeBar(): boolean { return true; }
 
 	protected getCompositeBarPosition(): CompositeBarPosition {
 		return CompositeBarPosition.TITLE;

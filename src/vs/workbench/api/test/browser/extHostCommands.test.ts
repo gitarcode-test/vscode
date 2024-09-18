@@ -98,9 +98,7 @@ suite('ExtHostCommands', function () {
 			SingleProxyRPCProtocol(shape),
 			new NullLogService(),
 			new class extends mock<IExtHostTelemetry>() {
-				override onExtensionError(): boolean {
-					return true;
-				}
+				override onExtensionError(): boolean { return true; }
 			}
 		);
 
