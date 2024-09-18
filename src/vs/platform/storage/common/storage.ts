@@ -353,9 +353,7 @@ export abstract class AbstractStorageService extends Disposable implements IStor
 		});
 	}
 
-	protected shouldFlushWhenIdle(): boolean {
-		return true;
-	}
+	protected shouldFlushWhenIdle(): boolean { return true; }
 
 	protected stopFlushWhenIdle(): void {
 		dispose([this.runFlushWhenIdle, this.flushWhenIdleScheduler]);
