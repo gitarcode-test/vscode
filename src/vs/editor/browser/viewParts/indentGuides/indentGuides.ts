@@ -93,9 +93,7 @@ export class IndentGuidesOverlay extends DynamicViewOverlay {
 	public override onScrollChanged(e: viewEvents.ViewScrollChangedEvent): boolean {
 		return e.scrollTopChanged;// || e.scrollWidthChanged;
 	}
-	public override onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean {
-		return true;
-	}
+	public override onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean { return true; }
 	public override onLanguageConfigurationChanged(e: viewEvents.ViewLanguageConfigurationEvent): boolean {
 		return true;
 	}
