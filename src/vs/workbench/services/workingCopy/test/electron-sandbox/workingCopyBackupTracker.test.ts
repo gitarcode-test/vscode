@@ -407,9 +407,7 @@ suite('WorkingCopyBackupTracker (native)', function () {
 				return false;
 			}
 
-			override isModified(): boolean {
-				return true;
-			}
+			override isModified(): boolean { return true; }
 		}
 
 		const resource = toResource.call(this, '/path/custom.txt');
