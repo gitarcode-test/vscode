@@ -86,9 +86,7 @@ class NullContext extends Context {
 		return false;
 	}
 
-	public override removeValue(key: string): boolean {
-		return false;
-	}
+	public override removeValue(key: string): boolean { return false; }
 
 	public override getValue<T>(key: string): T | undefined {
 		return undefined;

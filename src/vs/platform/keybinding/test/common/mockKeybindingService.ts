@@ -47,9 +47,7 @@ export class MockContextKeyService implements IContextKeyService {
 		this._keys.set(key, ret);
 		return ret;
 	}
-	public contextMatchesRules(rules: ContextKeyExpression): boolean {
-		return false;
-	}
+	public contextMatchesRules(rules: ContextKeyExpression): boolean { return false; }
 	public get onDidChangeContext(): Event<IContextKeyChangeEvent> {
 		return Event.None;
 	}
@@ -143,9 +141,7 @@ export class MockKeybindingService implements IKeybindingService {
 
 	}
 
-	public dispatchEvent(e: IKeyboardEvent, target: IContextKeyServiceTarget): boolean {
-		return false;
-	}
+	public dispatchEvent(e: IKeyboardEvent, target: IContextKeyServiceTarget): boolean { return false; }
 
 	public enableKeybindingHoldMode(commandId: string): undefined {
 		return undefined;

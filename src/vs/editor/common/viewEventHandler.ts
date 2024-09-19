@@ -33,9 +33,7 @@ export class ViewEventHandler extends Disposable {
 
 	// --- begin event handlers
 
-	public onCompositionStart(e: viewEvents.ViewCompositionStartEvent): boolean {
-		return false;
-	}
+	public onCompositionStart(e: viewEvents.ViewCompositionStartEvent): boolean { return false; }
 	public onCompositionEnd(e: viewEvents.ViewCompositionEndEvent): boolean {
 		return false;
 	}
@@ -66,9 +64,7 @@ export class ViewEventHandler extends Disposable {
 	public onLinesDeleted(e: viewEvents.ViewLinesDeletedEvent): boolean {
 		return false;
 	}
-	public onLinesInserted(e: viewEvents.ViewLinesInsertedEvent): boolean {
-		return false;
-	}
+	public onLinesInserted(e: viewEvents.ViewLinesInsertedEvent): boolean { return false; }
 	public onRevealRangeRequest(e: viewEvents.ViewRevealRangeRequestEvent): boolean {
 		return false;
 	}
@@ -84,9 +80,7 @@ export class ViewEventHandler extends Disposable {
 	public onTokensColorsChanged(e: viewEvents.ViewTokensColorsChangedEvent): boolean {
 		return false;
 	}
-	public onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean {
-		return false;
-	}
+	public onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean { return false; }
 
 	// --- end event handlers
 

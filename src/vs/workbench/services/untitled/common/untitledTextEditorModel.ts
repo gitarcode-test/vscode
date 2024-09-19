@@ -445,7 +445,5 @@ export class UntitledTextEditorModel extends BaseTextEditorModel implements IUnt
 
 	//#endregion
 
-	override isReadonly(): boolean {
-		return false;
-	}
+	override isReadonly(): boolean { return false; }
 }
