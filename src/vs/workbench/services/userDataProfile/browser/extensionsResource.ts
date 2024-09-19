@@ -347,9 +347,7 @@ export class ExtensionsResourceImportTreeItem extends ExtensionsResourceTreeItem
 		super();
 	}
 
-	isFromDefaultProfile(): boolean {
-		return false;
-	}
+	isFromDefaultProfile(): boolean { return false; }
 
 	protected getExtensions(): Promise<IProfileExtension[]> {
 		return this.instantiationService.createInstance(ExtensionsResource).getProfileExtensions(this.content);

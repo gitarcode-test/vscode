@@ -75,18 +75,14 @@ export class ViewEventHandler extends Disposable {
 	public onScrollChanged(e: viewEvents.ViewScrollChangedEvent): boolean {
 		return false;
 	}
-	public onThemeChanged(e: viewEvents.ViewThemeChangedEvent): boolean {
-		return false;
-	}
+	public onThemeChanged(e: viewEvents.ViewThemeChangedEvent): boolean { return false; }
 	public onTokensChanged(e: viewEvents.ViewTokensChangedEvent): boolean {
 		return false;
 	}
 	public onTokensColorsChanged(e: viewEvents.ViewTokensColorsChangedEvent): boolean {
 		return false;
 	}
-	public onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean {
-		return false;
-	}
+	public onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean { return false; }
 
 	// --- end event handlers
 
