@@ -12,9 +12,7 @@ import { ISocketFactory } from '../common/remoteSocketFactoryService.js';
 
 export const nodeSocketFactory = new class implements ISocketFactory<RemoteConnectionType.WebSocket> {
 
-	supports(connectTo: WebSocketRemoteConnection): boolean {
-		return true;
-	}
+	supports(connectTo: WebSocketRemoteConnection): boolean { return true; }
 
 	connect({ host, port }: WebSocketRemoteConnection, path: string, query: string, debugLabel: string): Promise<ISocket> {
 		return new Promise<ISocket>((resolve, reject) => {
