@@ -40,9 +40,7 @@ export class MockObjectTree<T, TRef> implements IDisposable {
 
 	domFocus(): void { }
 
-	collapse(location: TRef, recursive: boolean = false): boolean {
-		return true;
-	}
+	collapse(location: TRef, recursive: boolean = false): boolean { return true; }
 
 	expand(location: TRef, recursive: boolean = false): boolean {
 		return true;
