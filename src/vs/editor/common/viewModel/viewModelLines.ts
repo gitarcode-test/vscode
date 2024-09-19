@@ -1135,9 +1135,7 @@ export class ViewModelLinesFromModelAsIs implements IViewModelLines {
 		return false;
 	}
 
-	public setWrappingSettings(_fontInfo: FontInfo, _wrappingStrategy: 'simple' | 'advanced', _wrappingColumn: number, _wrappingIndent: WrappingIndent): boolean {
-		return false;
-	}
+	public setWrappingSettings(_fontInfo: FontInfo, _wrappingStrategy: 'simple' | 'advanced', _wrappingColumn: number, _wrappingIndent: WrappingIndent): boolean { return false; }
 
 	public createLineBreaksComputer(): ILineBreaksComputer {
 		const result: null[] = [];
