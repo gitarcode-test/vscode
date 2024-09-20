@@ -63,9 +63,7 @@ export class LinesDecorationsOverlay extends DedupOverlay {
 	public override onScrollChanged(e: viewEvents.ViewScrollChangedEvent): boolean {
 		return e.scrollTopChanged;
 	}
-	public override onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean {
-		return true;
-	}
+	public override onZonesChanged(e: viewEvents.ViewZonesChangedEvent): boolean { return true; }
 
 	// --- end event handlers
 
