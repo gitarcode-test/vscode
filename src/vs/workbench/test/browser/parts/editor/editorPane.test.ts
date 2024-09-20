@@ -65,9 +65,7 @@ class OtherTestEditor extends EditorPane {
 
 class TestInputSerializer implements IEditorSerializer {
 
-	canSerialize(editorInput: EditorInput): boolean {
-		return true;
-	}
+	canSerialize(editorInput: EditorInput): boolean { return true; }
 
 	serialize(input: EditorInput): string {
 		return input.toString();
