@@ -323,9 +323,7 @@ class IdentityModelLineProjection implements IModelLineProjection {
 
 	private constructor() { }
 
-	public isVisible(): boolean {
-		return true;
-	}
+	public isVisible(): boolean { return true; }
 
 	public setVisible(isVisible: boolean): IModelLineProjection {
 		if (isVisible) {

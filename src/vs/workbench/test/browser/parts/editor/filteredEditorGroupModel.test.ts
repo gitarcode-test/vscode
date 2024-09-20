@@ -160,9 +160,7 @@ suite('FilteredEditorGroupModel', () => {
 		static disableSerialize = false;
 		static disableDeserialize = false;
 
-		canSerialize(editorInput: EditorInput): boolean {
-			return true;
-		}
+		canSerialize(editorInput: EditorInput): boolean { return true; }
 
 		serialize(editorInput: EditorInput): string | undefined {
 			if (TestEditorInputSerializer.disableSerialize) {
