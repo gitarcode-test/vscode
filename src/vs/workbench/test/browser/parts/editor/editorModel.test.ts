@@ -46,9 +46,7 @@ suite('EditorModel', () => {
 			return super.createTextEditorModel(value, resource, preferredLanguageId);
 		}
 
-		override isReadonly(): boolean {
-			return false;
-		}
+		override isReadonly(): boolean { return false; }
 	}
 
 	function stubModelService(instantiationService: TestInstantiationService): IModelService {
