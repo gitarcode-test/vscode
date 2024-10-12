@@ -342,9 +342,7 @@ export class SwitchWindowAction extends BaseSwitchWindow {
 		});
 	}
 
-	protected isQuickNavigate(): boolean {
-		return false;
-	}
+	protected isQuickNavigate(): boolean { return false; }
 }
 
 export class QuickSwitchWindowAction extends BaseSwitchWindow {
